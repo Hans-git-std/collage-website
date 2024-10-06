@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admmision in YDOE</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            text-transform: uppercase;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+
+        }
+        input:hover{
+            background-color: rgba(240, 255, 240,0.4);
+            transform:scale(0.9);
+            font-weight: 600;
+            font-size: 25px;
+        }
+         button {
+            padding: 12px;
+            background: #004080;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>admission form</h1>
+    <form action="#" method="post">
+        <label for="name">Your name:-</label>
+        <input type="text" name="name" required><br/>
+        <label for="email">Email id:-</label>
+        <input type="email" name="email" required><br/>
+        <label  for="DOB">Date of birth:-</label>
+        <input type="date" name="date" required><br/><hr/>
+        <label for="father">father name:-</label>
+        <input type="text" name="father" required><br>
+        <label for="mother">mother name:-</label>
+        <input type="text" name="mother" required><br><hr>
+        <label for="10th">10th markssheet</label>
+        <input type="file" name="result10" required><br>
+        <label for="12th">12th markssheet</label>
+        <input type="file" name="result12" required><br><hr>
+        <label for="course">desired course</label>
+        <select id="option" name="course" required>
+            <option value="none">select course</option>
+        <option value="me">B.TECH Machanical</option>
+        <option value="me-cse">B.tech machanical, minor CS</option>
+        <option value="cse">B>TECH computer science</option>
+        <option value="ecm">B>Tech ECM</option>
+        <option value="diplomame">Diploma ME</option>
+        <option value="diplomacs">Diploma CS</option>
+        <option value="bca">Bachlor in Computer application</option>
+        <option value="other">None</option>
+        </select><hr>
+        <button type="reset" id="reset">clear form</button><br>
+        <button type="submit" id="submit">Submit</button><hr>
+        <p1>how much you satisfy from this page</p1>
+        <input type="range" required>
+
+
+    </form>
+    
+</body>
+</html>
